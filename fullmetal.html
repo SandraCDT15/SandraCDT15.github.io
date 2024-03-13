@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e40fc10a68.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Fullmetal</title>
+</head>
+
+<body>
+    <div class="container-fluid second-main-container" id="fullmetal-container">
+        <div class="row buttons-row">
+            <div class="row buttons-row">
+                <div class="col-md-12 buttons-column">
+                    <button type="button" id="btnPrev" class="btn btn-light prev-btn"><span
+                            class="fa-solid fa-arrow-left"></span></button>
+                    <button type="button" id="btnNext" class="btn btn-light next-btn"><span
+                            class="fa-solid fa-arrow-right"></span></button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="title-h1" id="fullmetal-title">Full Methal Alchemisth Broderhood</h1>
+            </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-md-12 double-column">
+
+                <div class="col-md-4 col-images col-img-left">
+                    <img src="./images/collageFullmetal.jpg" alt="Collage de imagenes relevantes de naruto"
+                        class="collage-left">
+                </div>
+
+                <div class="col-md-7 on-page-text col-texts col-texts-right" id="fullmetal-text-color">
+                    <div class="on-page-text sinopsis">
+                        <h3 class="subtitle-h3">Sinopsis</h3>
+                        <p>Obsesionado con la idea de traer de recuperar el cuerpo de su hermano, Edward se une al
+                            ejército a la edad de 12 años como alquimista estatal, para tener la libertad de ejercer e
+                            investigar sobre los secretos mejor guardados de la alquimia.</p>
+                    </div>
+
+                    <div class="on-page-text reseña">
+                        <h3 class="subtitle-h3">Reseña</h3>
+                        <p>Definitivamente es uno de mis ánimes favoritos. Tiene muchos secretos que te sorprenden con
+                            el paso de la historia, también es digno de verlo más de una vez ya que comienzas a notar
+                            pistas sútiles que desde el principio se mostraron, pero por la falta de contexto son
+                            escenas irrelevantes. Recomendado 100%</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-back-to-start">
+            <button type="button" class="btn btn-info" id="back-to-start">Volver al Inicio</button>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        var btnNext = document.getElementById("btnNext");
+        var btnPrev = document.getElementById("btnPrev");
+        var btnBack = document.getElementById("back-to-start");
+
+        btnNext.addEventListener("click", function () {
+
+            window.location.href = "swordArt.html";
+        });
+        btnPrev.addEventListener("click", function () {
+
+            window.location.href = "naruto.html";
+        });
+        btnBack.addEventListener("click", function () {
+
+            window.location.href = "index.html"
+        });
+    </script>
+</body>
+
+</html>
